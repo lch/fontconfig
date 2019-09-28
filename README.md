@@ -1,11 +1,13 @@
-# fontconfig
-A modified fontconfig for CJK user.
+# fontconfig config
 
+ fontconfig priorty settings for Fedora User
 
+ This file will changes the default alphabet order in fontconfig's font fallback.
+
+ In default, JP font will displayed first. If you don't want to change the locale setting, you can choose to specify the oder by the configuration file.
 
 ## Usage 
 
-1. Install Noto Sans CJK font pack.
-2. Backup `40-nonlatin.conf` and `65-nonlatin.conf` under `/etc/fonts/conf.d/`.
-3. Copy and overwrite them with file in the repository.
-
+```
+sudo cp ./64-language-selector-prefer.conf /etc/fonts/conf.d/
+```
